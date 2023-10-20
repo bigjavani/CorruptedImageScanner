@@ -223,7 +223,7 @@ namespace ImageCompare
 
             try
             {
-                List<string> frameNumbers = new List<string>();
+                List<int> frameNumbers = new List<int>();
                 frameNumbers.Clear();
 
                 foreach (var item in errorList)
@@ -232,7 +232,7 @@ namespace ImageCompare
                     int dotIndex = fileName.IndexOf('.');
                     fileName = fileName.Substring(0, dotIndex);
                     int underlineIndex = fileName.IndexOf('_', fileName.Length - 7);
-                    string frameNumber = int.Parse(fileName.Substring(underlineIndex + 1)).ToString();
+                    int frameNumber = int.Parse(fileName.Substring(underlineIndex + 1));
 
                     frameNumbers.Add(frameNumber);
                 }
@@ -245,19 +245,19 @@ namespace ImageCompare
                     textBox1.Text += frameNumbers[i] + Environment.NewLine;
                 }
 
-                int start = int.Parse(frameNumbers[0]);
-                int end = int.Parse(frameNumbers[0]);
+                int start =frameNumbers[0];
+                int end = frameNumbers[0];
 
                 for (int i = 1; i < frameNumbers.Count; i++)
                 {
-                    if (int.Parse(frameNumbers[i]) == end + 1)
+                    if (frameNumbers[i]== end + 1)
                     {
-                        end = int.Parse(frameNumbers[i]);
+                        end = frameNumbers[i];
                     }
                     else
                     {
-                        copyText += start == end ? $"{start}, " : $"{start}-{end}, ";
-                        start = end = int.Parse(frameNumbers[i]);
+                        copyText += start == end ? $"{start}," : $"{start}-{end},";
+                        start = end = frameNumbers[i];
                     }
                 }
                 copyText += start == end ? $"{start}" : $"{start}-{end}";
@@ -300,6 +300,7 @@ public class ImageFile
     {
         get { return _blComplete; }
     }
+
     private int _iEndingNull = 0;
 
     private readonly byte[] _abTagPNG = { 137, 80, 78, 71, 13, 10, 26, 10 };
