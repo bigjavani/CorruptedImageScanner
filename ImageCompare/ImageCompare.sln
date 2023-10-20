@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCompare", "ImageCompare.csproj", "{D13E1BE6-8958-4AAB-B6B5-9835CB6D73B2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\Setup\Setup.vdproj", "{26A091B6-8BFF-4E2B-8379-C05B7230346E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D13E1BE6-8958-4AAB-B6B5-9835CB6D73B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D13E1BE6-8958-4AAB-B6B5-9835CB6D73B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D13E1BE6-8958-4AAB-B6B5-9835CB6D73B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D13E1BE6-8958-4AAB-B6B5-9835CB6D73B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26A091B6-8BFF-4E2B-8379-C05B7230346E}.Debug|Any CPU.ActiveCfg = Debug
+		{26A091B6-8BFF-4E2B-8379-C05B7230346E}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F4CBD47-42C5-434B-B10B-FB75BF4B3E52}
+	EndGlobalSection
+EndGlobal
