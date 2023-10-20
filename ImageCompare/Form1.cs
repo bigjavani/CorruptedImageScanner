@@ -44,7 +44,6 @@ namespace ImageCompare
             progressBar1.Maximum = images.Count;
             errorList.Clear();
 
-
             Thread t1 = new Thread(() =>
             {
                 RunCommand();
@@ -241,7 +240,7 @@ namespace ImageCompare
                 string copyText = "";
                 frameNumbers.Sort();
 
-                for (int i = 0; i < frameNumbers.Count - 1; i++)
+                for (int i = 0; i < frameNumbers.Count ; i++)
                 {
                     textBox1.Text += frameNumbers[i] + Environment.NewLine;
                 }

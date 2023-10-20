@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RAHIM\\Desktop\\C#\\Image Compare\\ImageCompare\\ImageCompare.csproj",
+      "projectUniqueName": "C:\\Users\\RAHIM\\Desktop\\C#\\Image Compare\\CorruptedImageScanner\\ImageCompare\\ImageCompare.csproj",
       "projectName": "ImageCompare",
-      "projectPath": "C:\\Users\\RAHIM\\Desktop\\C#\\Image Compare\\ImageCompare\\ImageCompare.csproj",
+      "projectPath": "C:\\Users\\RAHIM\\Desktop\\C#\\Image Compare\\CorruptedImageScanner\\ImageCompare\\ImageCompare.csproj",
       "packagesPath": "C:\\Users\\RAHIM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RAHIM\\Desktop\\C#\\Image Compare\\ImageCompare\\obj\\",
+      "outputPath": "C:\\Users\\RAHIM\\Desktop\\C#\\Image Compare\\CorruptedImageScanner\\ImageCompare\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\RAHIM\\AppData\\Roaming\\NuGet\\NuGet.Config",
